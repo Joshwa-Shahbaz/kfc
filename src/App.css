@@ -1,3 +1,11 @@
+* {
+  margin: 0;
+  padding: 0;
+  background-color: #060906;
+  scroll-behavior: smooth;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
 .App {
   text-align: center;
 }
@@ -11,6 +19,342 @@
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
   }
+}
+
+/* navbar of the page */
+.header {
+  position: relative;
+  display: flex;
+  object-fit: cover;
+  flex-wrap: wrap;
+}
+.nav {
+  position: fixed !important;
+  top: 0;
+  z-index: 9999;
+  transition: 0.32s ease-in-out;
+  color: #060906;
+  width: 100% !important;
+}
+
+.logo {
+  position: relative;
+  left: 80%;
+  width: 130px;
+  height: 75px;
+}
+
+.b1 {
+  position: relative;
+  padding: 9px 20px;
+  border-top: 2px solid black;
+  border-left: 2px solid black;
+  border-bottom: 2px solid black;
+  border-right: none;
+  border-radius: 10px 0px 0px 10px;
+  color: #fffff3;
+  background-color: #1c1816;
+  font-weight: 700;
+  font-size: 14px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  left: 80px;
+}
+.b2 {
+  position: relative;
+  padding: 9px 20px;
+  border-top: 2px solid black;
+  border-left: none;
+  border-bottom: 2px solid black;
+  border-right: 2px solid black;
+  border-radius: 0px 10px 10px 0px;
+  color: #fffff3;
+  background-color: #1c1816;
+  font-weight: 700;
+  font-size: 14px;
+  left: 80px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+.button-active {
+  background-color: #48413e;
+}
+.target {
+  width: 40px;
+  background-color: #1c1816;
+}
+i {
+  background-color: #1c1816;
+  color: #fffff3;
+}
+.location-button {
+  position: relative !important;
+  background-color: #1c1816;
+  border: 2px solid #1c1816;
+  border-radius: 20px;
+  padding: 5px 15px;
+  color: #fffff3;
+  font-weight: 500;
+  left: 43%;
+  transition: 0.5s ease-in;
+}
+.location-button:hover {
+  background-color: #48413e;
+}
+.fa-caret-down {
+  font-size: 12px;
+  margin-left: 8px;
+}
+.login-button {
+  position: relative !important;
+  background-color: #cd1621;
+  color: #fffff3;
+  padding: 6px 18px;
+  left: 45%;
+  border: 2px solid #cd1621;
+  font-weight: 500;
+  font-size: 18px;
+  border-radius: 10px;
+}
+
+@media (max-width: 1500px) {
+  .logo {
+    left: 60%;
+  }
+  .b1 {
+    left: 70px;
+  }
+  .b2 {
+    left: 70px;
+  }
+  .location-button {
+    left: 38%;
+  }
+  .login-button {
+    left: 40%;
+  }
+}
+@media (max-width: 1350px) {
+  .logo {
+    left: 60%;
+  }
+  .b1 {
+    left: 70px;
+  }
+  .b2 {
+    left: 70px;
+  }
+  .location-button {
+    left: 32%;
+  }
+  .login-button {
+    left: 35%;
+  }
+}
+@media (max-width: 1200px) {
+  .logo {
+    left: 60%;
+  }
+  .b1 {
+    left: 70px;
+  }
+  .b2 {
+    left: 70px;
+  }
+  .location-button {
+    left: 20%;
+  }
+  .login-button {
+    left: 25%;
+  }
+}
+@media (max-width: 1100px) {
+  .logo {
+    left: 30%;
+  }
+  .b1 {
+    left: 40px;
+  }
+  .b2 {
+    left: 40px;
+  }
+  .location-button {
+    left: 20%;
+  }
+  .login-button {
+    left: 25%;
+  }
+}
+@media (max-width: 990px) {
+  .logo {
+    left: 30%;
+  }
+  .b1 {
+    left: 10px;
+  }
+  .b2 {
+    left: 10px;
+  }
+  .location-button {
+    left: 5%;
+  }
+  .login-button {
+    top: 5px;
+    left: 7%;
+  }
+}
+
+/* slider of the page */
+.carousel {
+  justify-items: center;
+  width: 100%;
+  height: 400px;
+  position: relative;
+  top: 60px;
+}
+.carousel-img {
+  width: 100%;
+  height: 400px;
+}
+
+/* categories of the page */
+.categ {
+  position: relative;
+  top: 160px;
+}
+.categ-head {
+  margin-bottom: 30px;
+}
+.heading {
+  font-size: 27px;
+  color: #fffff3;
+  font-family: sans-serif;
+  font-weight: 700;
+}
+.line {
+  font-weight: 1200;
+  color: #fffff3;
+  height: 5px;
+}
+/* cards of the page */
+.cards-head {
+  position: relative;
+  top: 190px;
+  bottom: px;
+}
+.card-gap {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.card-1 {
+  position: relative;
+  top: 220px;
+  width: 290px;
+  margin-left: 10px;
+  height: 470px;
+  background-color: #1c1816;
+  bottom: 50px !important;
+  justify-self: center;
+  border-radius: 10px;
+  text-align: left;
+}
+@media (max-width: 1200px) {
+  .card-1 {
+    left: 100px;
+    margin-top: 50px;
+  }
+}
+@media (max-width: 992px) {
+  .card-1 {
+    left: 30px;
+    margin-top: 50px;
+  }
+}
+@media (max-width: 768px) {
+  .card-1 {
+    left: 125px;
+    margin-top: 50px;
+  }
+}
+@media (max-width: 480px) {
+  .card-1 {
+    left: 50px;
+    margin-top: 50px;
+  }
+}
+@media (max-width: 400px) {
+  .card-1 {
+    left: 40px;
+    margin-top: 50px;
+  }
+}
+@media (max-width: 370px) {
+  .card-1 {
+    left: 20px;
+    margin-top: 50px;
+  }
+}
+.card-div {
+  position: absolute;
+  top: 25px;
+  left: 20px;
+  width: 250px;
+  height: auto;
+  transition: 0.3 ease-in-out;
+  overflow: hidden;
+}
+.card-img:hover {
+  transform: scale(1.05);
+}
+.card-img {
+  width: 100%;
+  height: 250px;
+}
+.card-title {
+  width: 230px;
+  color: #fffff3;
+  position: relative;
+  top: 285px;
+  background-color: #1c1816;
+  font-size: 25px;
+  font-weight: 600;
+  left: 18px;
+}
+.card-desc {
+  width: 230px;
+  height: auto;
+  color: #fffff3;
+  position: relative;
+  top: 290px;
+  background-color: #1c1816;
+  font-size: 18px;
+  left: 15px;
+}
+.price {
+  color: #fffff3;
+  position: relative;
+  top: 290px;
+  background-color: #1c1816;
+  font-size: 29px;
+  left: 15px;
+  font-weight: 700;
+}
+.add-bucket {
+  position: relative;
+  color: #fffff3;
+  background-color: #cd1621;
+  border: 2px solid #cd1621;
+  font-weight: 600;
+  padding: 5px 10px;
+  border-radius: 10px;
+  top: 285px;
+  left: 50px;
+}
+
+.footer-box-3 {
+  width: 25%;
+  height: 300px;
+  background-color: blue;
 }
 
 .App-header {
